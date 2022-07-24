@@ -1,0 +1,370 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+header .profile-image:hover {
+  transform: scale(1.2) rotate(180deg);
+}
+
+.tag {
+  color: whitesmoke;
+  text-shadow: 4px 4px 3px #161616;
+} 
+
+.location {
+  background-color: rgb(104, 80, 80);
+  color: rgb(255, 255, 250);
+  padding: 1px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(29, 26, 26);
+  background: #eee1c1;
+}
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: rgb(248, 239, 239);
+  text-shadow: 2px 2px 2px black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: #e8e8ea;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: linear-gradient(rgba(122, 73, 14, 0.918), rgb(215, 108, 138), rgb(158, 145, 145));
+  min-height: 20px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+    text-shadow: 2px 2px 3px #161616;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: rgb(83, 40, 40);
+  font-size: 120%;
+}
+
+.index {
+  text-align: center;
+  background: url('images/fundal1.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.experience {
+  text-align: center;
+  background: url('images/fundal3.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+p.experience {
+  padding: 0 10px;
+  text-align: justify;
+  background-image: none;
+  background-color: #161616;
+  text-indent: 5%;
+  color:rgb(253, 243, 243);
+  text-shadow: 2px 2px 10px black;
+  width: 75%;
+ }
+
+h2.experience {
+  padding-top: 0;
+  text-align: left;
+  text-indent: 20%;
+  background-image: none;
+  color: rgb(248, 242, 242);
+  text-shadow: 5px 5px 10px rgb(9, 7, 7);
+}
+
+.hobbies {
+  text-align: center;
+  background: url('images/fundal4.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.hobby {
+  text-align: left;
+  width: 800px;
+}
+
+.contact {
+  text-align: center;
+  background: url('images/fundal2.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+
+
+.card {
+  background: url('images/fundal.jpg') no-repeat top center ;
+  background-size: 160%;
+  padding: 0 0 300px 10px;  
+  max-width: 1000px;
+  overflow: hidden;
+  margin: 2%;
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  border-bottom: 4px solid #ccc;
+  border-radius: 8px;
+  }
+
+.card1,.card2 {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  min-width: 280px;
+  max-width: 500px;
+  text-align: justify;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  overflow: hidden;
+ }
+
+.card3 {
+  max-width: 1000px;
+  margin: 0;
+  text-align: justify;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  overflow: hidden;
+}
+
+.hobby {
+  padding-left: 20px;
+  text-align: justify;
+   max-width: 400px;
+}
+
+.card:hover,.card1:hover,.card2:hover,.card3:hover {
+  border-color: #d52ed5;
+  transform: scale(1.01) rotate(0deg);
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #28067e;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #7a06c3;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+.twitter {
+  background-image: url(images/twitter.svg);
+}
+
+.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+
+.github {
+  background-image: url(images/github.svg);
+}
+
+.instagram {
+  background-image: url(images/instagram.svg);
+}
+
+.social:hover {
+  opacity: 1;
+}
+
+.clearfix {
+  clear: both;
+}
+
+form {
+  width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  max-width: 90%;
+     border: none;
+    padding: 2rem 0;
+}
+
+label {
+  display: block;
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  margin: auto;
+  min-height: 2em;
+  min-width: 200px;
+  background-color: #a49e9e;
+  border: 1px solid #d456c3;
+  color: #211b1b;
+  text-align: justify;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: auto;
+  height: 2em;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: #7878fc;
+  border-color: rgb(71, 45, 175);
+  min-width: 200px;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 10px auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  p.experience {
+    color:rgb(11, 11, 11);
+    text-shadow: 2px 2px 8px rgb(249, 248, 248);
+    background-color:rgb(137, 197, 231);
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  .hobby {
+    padding-left: 60px;
+    text-align: justify;
+     max-width: 700px;
+  }
+  
+}
+
